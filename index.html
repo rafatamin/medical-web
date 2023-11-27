@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Website</title>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+    <!-- header starts here -->
+    <header>
+        <!-- header top starts here -->
+        <section class="header-top flex-around">
+            <div class="">
+                <a href="#">About</a>
+                <a href="#">Doctors</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="d-flex flex-column d-sm-block">
+                <a href="#"><i class="fa-solid fa-phone"></i> +880123456789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> support@yourmail.com</a>
+            </div>
+        </section>
+        <hr>
+        <!-- header top ends here -->
+
+        <!-- navbar starts here -->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid px-3">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 navbar-style">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Doctors</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Services</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-dark" href="#">404 Error</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blogs
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-dark" href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <button class="navbar-button d-block m-auto m-lg-0" type="submit">Book Appointment</button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- navbar ends here -->
+
+
+        <!-- banner starts here -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/slider.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption col-md-7 col-lg-7 text-start py-2 banner-caption">
+                        <h2 class="banner-titale">We Provide <span class="banner-header-span">Medical</span> Services
+                            That You Can <span class="banner-header-span">Trust!</span></h2>
+                        <p class="banner-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto! Ducimus facere
+                            pariatur et inventore nam aliquam laborum quod quibusdam?
+                        </p>
+                        <button class="slider-btn me-sm-3 me-1">Get Appointment</button>
+                        <button class="slider-btn">Learn more</button>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="img/slider2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption col-md-7 col-lg-7 text-start py-2 banner-caption">
+                        <h2 class="banner-titale">We Provide <span class="banner-header-span">Medical</span> Services
+                            That You Can <span class="banner-header-span">Trust!</span></h2>
+                        <p class="banner-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto! Ducimus facere
+                            pariatur et inventore nam aliquam laborum quod quibusdam?
+                        </p>
+                        <button class="slider-btn me-sm-3 me-1">Get Appointment</button>
+                        <button class="slider-btn">Learn more</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="img/slider3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption col-md-7 col-lg-7 text-start py-2 banner-caption">
+                        <h2 class="banner-titale">We Provide <span class="banner-header-span">Medical</span> Services
+                            That You Can <span class="banner-header-span">Trust!</span></h2>
+                        <p class="banner-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto! Ducimus facere
+                            pariatur et inventore nam aliquam laborum quod quibusdam?
+                        </p>
+                        <button class="slider-btn me-sm-3 me-1">Get Appointment</button>
+                        <button class="slider-btn">Learn more</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- banner ends here -->
+    </header>
+    <!-- header ends here -->
+
+
+
+
+
+    <!-- main starts here -->
+    <main>
+
+        <!-- card-section starts here -->
+        <section class="container card-section-parents">
+            <div class="d-lg-flex justify-content-between">
+                <div class="card-section card-1">
+                    <p>Lorem Amet</p>
+                    <h3>Emergency Cases</h3>
+                    <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+                    <p class="mb-0">LEARN MORE <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+                <div class="card-section card-2">
+                    <p>Fusce Porttitor</p>
+                    <h3>Doctors Timetable</h3>
+                    <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+                    <p class="mb-0">LEARN MORE <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+                <div class="card-section  card-3">
+                    <p>Donec luctus</p>
+                    <h3>Opening Hours</h3>
+                    <table class="container-fluid">
+                        <tr>
+                            <td>Monday - Fridayp</td>
+                            <td class="text-end">8.00-20.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday</td>
+                            <td class="text-end">9.00-18.30</td>
+                        </tr>
+
+                        <tr>
+                            <td>Monday - Thusday</td>
+                            <td class="text-end">9.00-15.00</td>
+                        </tr>
+                    </table>
+                    <p class="mb-0">LEARN MORE <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+        </section>
+        <!-- card-section starts here -->
+
+
+        <!-- help section strats here -->
+        <section class="container help-section">
+            <div>
+                <div class="header-title ">
+                    <h2>We Are Always Ready To Help You & Your Family</h2>
+                    <img src="img/section-img.png" alt="header-img">
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                </div>
+
+                <div class="flex-around help-container-all">
+                    <div class="help-container">
+                        <div><i class="fa-solid fa-truck-medical icon"></i></div>
+                        <h3>Emergency Help</h3>
+                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+
+                    <div class="help-container">
+                        <div><i class="fa-solid fa-prescription-bottle-medical icon icon-2"></i></div>
+                        <h3>Enriched Pharmecy</h3>
+                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+
+                    <div class="help-container">
+                        <div><i class="fa-solid fa-stethoscope icon icon-3"></i></div>
+                        <h3>Medical Treatment</h3>
+                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- help section ends here -->
+
+
+
+
+        <!-- details-section starts here -->
+        <section class="details-section">
+            <div class="details-container flex-around">
+
+                <div class="details-content d-lg-flex text-lg-start gap-lg-4">
+                    <i class="fa-solid fa-house-chimney-window "></i>
+                    <div>
+                        <h3>3468</h3>
+                        <p>Hospital Rooms</p>
+                    </div>
+                </div>
+
+                <div class="details-content d-lg-flex text-lg-start gap-lg-4">
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <div>
+                        <h3>557</h3>
+                        <p>Specialist Doctors</p>
+                    </div>
+                </div>
+
+                <div class="details-content d-lg-flex text-lg-start gap-lg-4">
+                    <div><i class="fa-solid fa-face-smile"></i></div>
+                    <div>
+                        <h3>4379</h3>
+                        <p>Happy Patients</p>
+                    </div>
+                </div>
+
+                <div class="details-content d-lg-flex text-lg-start gap-lg-4">
+                    <div><i class="fa-solid fa-calendar-days"></i></div>
+                    <div>
+                        <h3>32</h3>
+                        <p class="mb-0">Years of Experience</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- details-section ends here -->
+
+
+
+        <!-- offer services starts here -->
+        <section class="offer-section container">
+
+            <div class="header-title ">
+                <h2>We Offer Different Services To Improve Your Health</h2>
+                <img src="img/section-img.png" alt="header-img">
+                <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+            </div>
+
+
+            <div class="d-lg-flex justify-content-between align-items-center my-5">
+                
+                <div class="px-2 my-3">
+                    <div>
+                        <h3 class="fw-bold mb-0">Who we Are</h3>
+                        <hr>
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est
+                            lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo.
+                        </p>
+                        <p class="text-secondary">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+
+
+                    <div class="d-lg-flex justify-content-between text-secondary my-4">
+                        <div>
+                            <p><i class="fa-solid fa-play"></i> Maecenas vitae luctus nibh.</p>
+
+                            <p><i class="fa-solid fa-play"></i> Duis massa massa.</p>
+
+                            <p><i class="fa-solid fa-play"></i> Aliquam feugiat interdum.</p>
+                        </div>
+
+
+                        <div>
+                            <p><i class="fa-solid fa-play"></i> Maecenas vitae luctus nibh.</p>
+
+                            <p><i class="fa-solid fa-play"></i> Duis massa massa.</p>
+
+                            <p><i class="fa-solid fa-play"></i> Aliquam feugiat interdum.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="px-2 my-3">
+                    <img class="offer-section-img" src="img/video-bg.jpg" alt="video" width="540" height="350">
+                </div>
+            </div>
+        </section>
+
+        <!-- offer services ends here -->
+
+
+
+
+    </main>
+    <!-- main ends here -->
+
+
+
+
+
+    <!-- footer starts here -->
+    <footer>
+
+    </footer>
+    <!-- footer ends here -->
+
+
+
+
+
+
+
+
+    <!-- bootstrap bundle js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
